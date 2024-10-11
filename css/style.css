@@ -1017,13 +1017,14 @@ figure.dotted-bg {
 
 .detail-v1 .detail-label {
   display: block;
-  font-size: 11px;
+  font-size: 0.9rem;
   font-weight: 900;
   text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
   letter-spacing: .1rem; }
 
 .detail-v1 .detail-val {
-  font-size: 16px; }
+  font-size: 0.9rem; }
 
 .position-relative {
   position: relative; }
@@ -1676,10 +1677,11 @@ figure.dotted-bg {
         .filter-buttons {
           display: flex;
           justify-content: center;
-          flex-wrap: wrap; /* Ensure the buttons can wrap when space is limited */
+          flex-wrap: nowrap; /* Prevent buttons from wrapping to a new line */
           margin-bottom: 20px;
           font-size: 0.8rem;
           font-family: "Open Sans", sans-serif;
+
         }
         
         .filter-button {
@@ -1688,32 +1690,37 @@ figure.dotted-bg {
           padding: 5px 15px;
           cursor: pointer;
           margin: 0 5px;
+          white-space: nowrap; /* Prevent button text from wrapping */
           transition: padding 0.3s, font-size 0.3s;
         }
         
         .filter-button.active {
           background-color: #0f3b09;
           color: white;
-          border-color: none;
           border-radius: 5px;
         }
         
-        /* Mobile responsiveness */
+        /* Responsive styles for smaller screens */
         @media (max-width: 768px) {
           .filter-button {
-            padding: 5px 10px; /* Reduce padding for smaller screens */
-            font-size: 0.75rem; /* Slightly reduce font size */
-            margin: 0 3px; /* Reduce space between buttons */
+            padding: 5px 10px;
+            font-size: 0.75rem;
+            margin: 0 3px;
           }
         }
         
         @media (max-width: 480px) {
           .filter-button {
-            padding: 4px 8px; /* Further reduce padding for very small screens */
-            font-size: 0.7rem; /* Reduce font size further */
-            margin: 0 2px; /* Minimize space between buttons */
+            padding: 4px 8px;
+            font-size: 0.7rem;
+            margin: 0 2px;
+          }
+          
+          .filter-buttons {
+            padding: 0 10px; /* Reduce padding around the buttons on small screens */
           }
         }
+        
         
 
 /* .education-section {
