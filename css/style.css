@@ -66,7 +66,7 @@ a.text-primary {
     color: #0f3b09 !important; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Merriweather", serif;
   color: #dddde6; }
 
 .btn {
@@ -199,12 +199,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
-.logo {
-  font-size: 24px;
-  color: #ffffff;
-  font-weight: 700; }
-  .logo:hover {
-    color: #ffffff; }
+.logo img {
+  width: 65px;
+  height: auto;
+}
+
 
 .site-nav {
   position: absolute;
@@ -1725,7 +1724,7 @@ figure.dotted-bg {
 
 /* .education-section {
   h5 {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Merriweather", serif;
     color: #0f3b09;
     text-transform: uppercase;
   }
@@ -1733,7 +1732,7 @@ figure.dotted-bg {
 
 .certification-section {
   h5 {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Merriweather", serif;
     color: #0f3b09;
     text-transform: uppercase;
   }
@@ -1754,9 +1753,10 @@ figure.dotted-bg {
   font-size: 1.3rem;
   font-weight: bold;
   color: #0f3b09;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 20px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Merriweather', serif;
+
 }
 
 .degree-item, .certificate-item {
@@ -1797,7 +1797,7 @@ figure.dotted-bg {
 
   h2 {
     color: #0f3b09;
-    text-transform: uppercase;
+
   }
 
   .exp-date {
@@ -1808,3 +1808,56 @@ figure.dotted-bg {
 
 
 }
+
+/* ----------- */
+
+/* Widget icon fixed to the right */
+/* Style the widget as a perfect circle */
+#nav-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;  /* Equal width and height */
+  height: 50px; /* Equal width and height */
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 9999; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Initially hide the widget */
+#nav-widget {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show the widget when scrolling */
+#nav-widget.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Style the icon inside */
+#nav-widget .js-widget-toggle {
+  font-size: 20px; /* Control icon size */
+  line-height: 1;   /* Ensure the icon doesn't stretch */
+  color: #fff;
+}
+
+#nav-widget:hover {
+  background-color: #555; /* Change color on hover */
+}
+
+/* Up arrow style when at the bottom */
+.nav-widget.up-arrow {
+  background-color: #0a74da; /* Optional: change color when showing up arrow */
+}
+
+
+

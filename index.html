@@ -18,7 +18,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -53,29 +55,13 @@
   <nav class="site-nav dark mb-5 site-navbar-target">
     <div class="container">
       <div class="site-navigation">
-        <a href="index.html" class="logo m-0"><img src="images/logo.png" alt="AP"></a>
+        <a href="index.html" class="logo m-0"><img src="images/ap_logo.svg" alt="AP"></a>
 
         <ul class="js-clone-nav d-none d-lg-inline-none site-menu float-right site-nav-wrap">
           <li><a href="#home-section" class="nav-link active">Home</a></li>
           <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-          <li><a href="#about-section"" class="nav-link">About</a></li>
-          <!-- <li class="has-children">
-            <a href="#about-section" class="nav-link">About</a>
-            <ul class="dropdown">
-              <li><a href="elements.html" class="nav-link">Elements</a></li>
-              <li class="has-children">
-                <a href="#">Menu Two</a>
-                <ul class="dropdown">
-                  <li><a href="#" class="nav-link">Sub Menu One</a></li>
-                  <li><a href="#" class="nav-link">Sub Menu Two</a></li>
-                  <li><a href="#" class="nav-link">Sub Menu Three</a></li>
-                </ul>
-              </li>
-              <li><a href="#" class="nav-link">Menu Three</a></li>
-            </ul>
-          </li> -->
+          <li><a href="#about-section"" class="nav-link">About</a></li>          
           <li><a href="#services-section" class="nav-link">Experience</a></li>
-
           <!-- <li><a href="#contact-section" class="nav-link">Contact us</a></li> -->
         </ul>
 
@@ -86,6 +72,14 @@
       </div>
     </div>
   </nav>
+
+  <!-- Widget for the Nav Menu -->
+<div id="nav-widget" class="nav-widget">
+  <span class="icon-menu js-widget-toggle"></span> <!-- Menu Icon -->
+</div>
+
+
+
 
 
 
@@ -128,7 +122,7 @@
         <div id="posts" class="row">
 
           <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2" data-filter="brochure">
-            <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+            <a href="fep.html" class="portfolio-item isotope-item gsap-reveal-img" data-id="1">
               <div class="overlay">
                 <span class="wrap-icon icon-link2"></span>
                 <div class="portfolio-item-content">
@@ -858,6 +852,55 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+$(document).ready(function() {
+  // Show the widget once the user scrolls down a bit (e.g., 100px)
+  $(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    
+    if (scrollTop > 100) {
+      $('#nav-widget').addClass('visible'); // Show the widget
+    } else {
+      $('#nav-widget').removeClass('visible'); // Hide the widget
+    }
+
+    // Also handle switching to the up arrow when at the bottom of the page
+    var documentHeight = $(document).height();
+    var windowHeight = $(window).height();
+    
+    if (scrollTop + windowHeight >= documentHeight - 50) {
+      $('.js-widget-toggle').removeClass('icon-menu').addClass('icon-arrow-up');
+      $('#nav-widget').addClass('up-arrow');
+    } else {
+      $('.js-widget-toggle').removeClass('icon-arrow-up').addClass('icon-menu');
+      $('#nav-widget').removeClass('up-arrow');
+    }
+  });
+
+  // Handle widget click to open the existing nav menu
+  $('body').on('click', '.js-widget-toggle', function(e) {
+    e.preventDefault();
+
+    // Only toggle menu if the widget is NOT in up-arrow mode
+    if (!$('#nav-widget').hasClass('up-arrow')) {
+      if ($('body').hasClass('offcanvas-menu')) {
+        $('body').removeClass('offcanvas-menu');
+        $('.js-menu-toggle').removeClass('active');
+      } else {
+        $('body').addClass('offcanvas-menu');
+        $('.js-menu-toggle').addClass('active');
+      }
+    }
+  });
+
+  // Scroll to top when the up arrow is clicked
+  $('body').on('click', '.nav-widget.up-arrow', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+  });
+});
+
+
 
 
     </script>

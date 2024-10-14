@@ -88,6 +88,14 @@ $(function(){
 				}
 			}
 		});
+
+		// Close the mobile menu when a link is clicked
+		$('body').on('click', '.site-mobile-menu-body .nav-link', function(e) {
+			if ($('body').hasClass('offcanvas-menu')) {
+			$('body').removeClass('offcanvas-menu');
+			$('body').find('.js-menu-toggle').removeClass('active');
+			}
+		});
 	}; 
 	siteMenuClone();
 

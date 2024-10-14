@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    
+</head>
+
+
+    <div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
+        <div class="container">
+          <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
+
+            <div class="portfolio-single-inner">
+                <h4 class="heading-portfolio-single-h2 text-black">Other Projects</h4>
+
+    <div id="portfolio-gallery" class="owl-carousel owl-theme">
+        <!-- Portfolio items will be injected here dynamically -->
+      </div>
+
+      </div>
+
+      </div>
+      </div>
+      </div>
+      
+      
+      <script>
+        function initOwlCarousel(currentProjectID) {
+          // Array of portfolio items
+          const portfolioItems = [
+            { id: 'FEP', title: 'Flo Event & Production', imgSrc: 'images/all/brochure_fep.jpg', url: 'fep.html' },
+            { id: 'AM', title: 'Brochure | Alla Moda', imgSrc: 'images/all/brochure_am.jpg', url: 'am.html' },
+            { id: 'FC', title: "Logo | Fatima's Closet", imgSrc: 'images/all/logo_fc.jpg', url: 'fc.html' },
+            { id: 'MG', title: 'Logo | M-Grill', imgSrc: 'images/all/logo_mgrill.jpg', url: 'mg.html' },
+            { id: 'MG', title: 'Logo | M-Grill', imgSrc: 'images/all/logo_mgrill.jpg', url: 'mg.html' }
+          ];
+      
+          // Filter out the current project
+          const filteredItems = portfolioItems.filter(item => item.id !== currentProjectID);
+      
+          // Populate the Owl Carousel with filtered items
+        //   const galleryContainer = $('#portfolio-gallery');
+        //   filteredItems.forEach(item => {
+        //     const galleryItem = `
+        //       <div class="item">
+        //         <a href="${item.url}">
+        //           <img src="${item.imgSrc}" alt="${item.title}" class="img-fluid">
+        //           <p>${item.title}</p>
+        //         </a>
+        //       </div>`;
+        //     galleryContainer.append(galleryItem);
+        //   });
+
+        // Populate the Owl Carousel with filtered items
+const galleryContainer = $('#portfolio-gallery');
+filteredItems.forEach(item => {
+  const galleryItem = `
+    <div class="item web branding isotope-mb-2">
+      <a href="${item.url}" class="portfolio-item isotope-item">
+        <div class="overlay">
+          <span class="wrap-icon icon-link2"></span>
+          <div class="portfolio-item-content">
+            <p>${item.title}</p>
+
+          </div>
+        </div>
+        <img src="${item.imgSrc}" class="lazyload img-fluid" alt="${item.title}" />
+      </a>
+    </div>`;
+  galleryContainer.append(galleryItem);
+});
+
+      
+          // Initialize Owl Carousel
+          $('#portfolio-gallery').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            responsive: {
+              0: { items: 1 },
+              600: { items: 2 },
+              1000: { items: 3 }
+            }
+          });
+        }
+      </script>
+      
+    
+    
+    
+</body>
+</html>
+
