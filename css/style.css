@@ -622,7 +622,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     .untree_co-section .heading strong, .untree_co-section .subheading strong {
       font-weight: 700; }
   .untree_co-section .heading {
-    font-size: 40px; }
+    font-size: 30px; }
   .untree_co-section .subheading {
     font-size: 18px;
     font-family: "Open Sans", sans-serif; }
@@ -1017,9 +1017,9 @@ figure.dotted-bg {
 .detail-v1 .detail-label {
   display: block;
   font-size: 0.9rem;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: .1rem; }
 
 .detail-v1 .detail-val {
@@ -1860,4 +1860,67 @@ figure.dotted-bg {
 }
 
 
+.portfolio-item-content .thumb-text {   
+    color: #fff !important;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+
+  
+}
+
+
+
+/* Hide the widget on screens smaller than 768px (tablet and mobile) */
+@media (max-width: 767px) {
+  #nav-widget {
+    display: none;
+  }
+}
+
+#portfolio-section h1 {
+  color: #0f3b09;
+}
+
+#project-description { 
+  
+  p, ul {
+  font-size: 0.9rem;
+  text-align: justify;
+  }
+
+  h6 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: .1rem;
+
+  }
+
+}
+
+#project-requirements {
+  p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: .1rem;
+  
+
+  }
+
+}
+
+.gallery-header {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: .1rem;
+}
 

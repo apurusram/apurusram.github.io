@@ -9,12 +9,12 @@
 </head>
 
 
-    <div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
+    <div class="untree_co-section-4 pb-0"  id="portfolio-section">
         <div class="container">
           <div class="portfolio-single-wrap unslate_co--section" id="portfolio-single-section">
 
             <div class="portfolio-single-inner">
-                <h4 class="heading-portfolio-single-h2 text-black">Other Projects</h4>
+                <h4 class="heading-portfolio-single-h2 text-black">Browse Other Projects</h4>
 
     <div id="portfolio-gallery" class="owl-carousel owl-theme">
         <!-- Portfolio items will be injected here dynamically -->
@@ -31,11 +31,23 @@
         function initOwlCarousel(currentProjectID) {
           // Array of portfolio items
           const portfolioItems = [
-            { id: 'FEP', title: 'Flo Event & Production', imgSrc: 'images/all/brochure_fep.jpg', url: 'fep.html' },
-            { id: 'AM', title: 'Brochure | Alla Moda', imgSrc: 'images/all/brochure_am.jpg', url: 'am.html' },
+            { id: 'FEPB', title: 'Brochure | Flo Event & Production', imgSrc: 'images/all/brochure_fep.jpg', url: 'fepb.html' },
             { id: 'FC', title: "Logo | Fatima's Closet", imgSrc: 'images/all/logo_fc.jpg', url: 'fc.html' },
-            { id: 'MG', title: 'Logo | M-Grill', imgSrc: 'images/all/logo_mgrill.jpg', url: 'mg.html' },
-            { id: 'MG', title: 'Logo | M-Grill', imgSrc: 'images/all/logo_mgrill.jpg', url: 'mg.html' }
+            { id: 'SMDS', title: "Website | Smart Digital Solutions", imgSrc: 'images/all/thumbnails/website_smds_t.jpg', url: 'smds.html' },
+            { id: 'MGL', title: 'Logo | M-Grill', imgSrc: 'images/all/logo_mgrill.jpg', url: 'mgl.html' },
+            { id: 'HYB', title: 'Social Media | Hybrid Battery', imgSrc: 'images/all/socialmedia_hyb.jpg', url: 'hyb.html' },
+            { id: 'FEPL', title: 'Logo | Flo Event & Production', imgSrc: 'images/all/thumbnails/logo_fep_t.jpg', url: 'fepl.html' },
+            { id: 'PRC', title: 'Website | PRC', imgSrc: 'images/all/thumbnails/website_prc_t.jpg', url: 'prc.html' },
+            { id: 'NB', title: 'Logo | Nelle Bar', imgSrc: 'images/all/logo_nb.jpg', url: 'nb.html' },
+            { id: 'MGSM', title: 'Social Media | M-Grill', imgSrc: 'images/all/socialmedia_mgrill.jpg', url: 'mgsm.html' },
+            { id: 'MC', title: 'Logo | MC Music', imgSrc: 'images/all/logo_mc.jpg', url: 'mc.html' },
+            { id: 'PD', title: 'Website | Pro Dispatch', imgSrc: 'images/all/thumbnails/website_prodisp_t.jpg', url: 'pd.html' },
+            { id: 'S', title: "Logo | Simm's Snack", imgSrc: 'images/all/logo_sims.jpg', url: 'snack.html' },
+            { id: 'AM', title: 'Brochure | Alla Moda', imgSrc: 'images/all/thumbnails/brochure_am_t.jpg', url: 'am.html' },
+            { id: 'AG', title: 'Logo | Agri2go', imgSrc: 'images/all/logo_agri2go.jpg', url: 'agri.html' },
+            { id: 'R', title: 'Website | Redsky Technologies', imgSrc: 'images/all/website_redsky.jpg', url: 'mgsm.html' },      
+            { id: 'GS', title: 'Logo | Girls Squad', imgSrc: 'images/all/logo_gsquad.jpg', url: 'gs.html' },
+            { id: '3K', title: 'Logo | Kwin Kal Kof', imgSrc: 'images/all/logo_3k.jpg', url: 'kwin.html' }
           ];
       
           // Filter out the current project
@@ -63,7 +75,7 @@ filteredItems.forEach(item => {
         <div class="overlay">
           <span class="wrap-icon icon-link2"></span>
           <div class="portfolio-item-content">
-            <p>${item.title}</p>
+            <p class="thumb-text">${item.title}</p>
 
           </div>
         </div>
@@ -80,6 +92,10 @@ filteredItems.forEach(item => {
             margin: 10,
             nav: false,
             dots: true,
+            autoplay: true, // Enable autoplay
+            autoplayTimeout: 3000, // Time between slides in milliseconds (3 seconds)
+            autoplayHoverPause: true, // Pause on hover
+            smartSpeed: 1000, // Smooth transition duration (1000ms = 1s)
             responsive: {
               0: { items: 1 },
               600: { items: 2 },
