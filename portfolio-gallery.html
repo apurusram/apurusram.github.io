@@ -31,15 +31,15 @@
         function initOwlCarousel(currentProjectID) {
           // Array of portfolio items
           const portfolioItems = [
-            { id: 'FEPB', title: 'Brochure | Flo Event & Production', imgSrc: 'images/all/brochure_fep.jpg', url: 'fepb.html' },
-            { id: 'FC', title: "Logo | Fatima's Closet", imgSrc: 'images/all/logo_fc.jpg', url: 'fc.html' },
-            { id: 'SMDS', title: "Website | Smart Digital Solutions", imgSrc: 'images/all/thumbnails/website_smds_t.jpg', url: 'smds.html' },
-            { id: 'MGL', title: 'Logo | M-Grill', imgSrc: 'images/all/logo_mgrill.jpg', url: 'mgl.html' },
-            { id: 'HYB', title: 'Social Media | Hybrid Battery', imgSrc: 'images/all/socialmedia_hyb.jpg', url: 'hyb.html' },
-            { id: 'FEPL', title: 'Logo | Flo Event & Production', imgSrc: 'images/all/thumbnails/logo_fep_t.jpg', url: 'fepl.html' },
-            { id: 'PRC', title: 'Website | PRC', imgSrc: 'images/all/thumbnails/website_prc_t.jpg', url: 'prc.html' },
-            { id: 'NB', title: 'Logo | Nelle Bar', imgSrc: 'images/all/logo_nb.jpg', url: 'nb.html' },
-            { id: 'MGSM', title: 'Social Media | M-Grill', imgSrc: 'images/all/socialmedia_mgrill.jpg', url: 'mgsm.html' },
+            { id: 'FEPB', title: 'Brochure | Flo Event & Production', imgSrc: 'images/all/brochure_fep.jpg', url: 'portfolio.html?id=FEPB' },
+            { id: 'FC', title: "Logo | Fatima's Closet", imgSrc: 'images/all/logo_fc.jpg', url: 'portfolio.html?id=FC' },
+            { id: 'SMDS', title: "Website | Smart Digital Solutions", imgSrc: 'images/all/thumbnails/website_smds_t.jpg', url: 'portfolio.html?id=SMDS' },
+            { id: 'MGL', title: 'Logo | M-Grill', imgSrc: 'images/all/logo_mgrill.jpg', url: 'portfolio.html?id=MGL' },
+            { id: 'HYB', title: 'Social Media | Hybrid Battery', imgSrc: 'images/all/socialmedia_hyb.jpg', url: 'portfolio.html?id=HYB' },
+            { id: 'FEPL', title: 'Logo | Flo Event & Production', imgSrc: 'images/all/thumbnails/logo_fep_t.jpg', url: 'portfolio.html?id=FEPL' },
+            { id: 'PRC', title: 'Website | PRC', imgSrc: 'images/all/thumbnails/website_prc_t.jpg', url: 'portfolio.html?id=PRC' },
+            { id: 'NB', title: 'Logo | Nelle Bar', imgSrc: 'images/all/logo_nb.jpg', url: 'portfolio.html?id=NB' },
+            { id: 'MGSM', title: 'Social Media | M-Grill', imgSrc: 'images/all/socialmedia_mgrill.jpg', url: 'portfolio.html?id=MGSM' },
             { id: 'MC', title: 'Logo | MC Music', imgSrc: 'images/all/logo_mc.jpg', url: 'mc.html' },
             { id: 'PD', title: 'Website | Pro Dispatch', imgSrc: 'images/all/thumbnails/website_prodisp_t.jpg', url: 'pd.html' },
             { id: 'S', title: "Logo | Simm's Snack", imgSrc: 'images/all/logo_sims.jpg', url: 'snack.html' },
@@ -51,20 +51,8 @@
           ];
       
           // Filter out the current project
-          const filteredItems = portfolioItems.filter(item => item.id !== currentProjectID);
-      
-          // Populate the Owl Carousel with filtered items
-        //   const galleryContainer = $('#portfolio-gallery');
-        //   filteredItems.forEach(item => {
-        //     const galleryItem = `
-        //       <div class="item">
-        //         <a href="${item.url}">
-        //           <img src="${item.imgSrc}" alt="${item.title}" class="img-fluid">
-        //           <p>${item.title}</p>
-        //         </a>
-        //       </div>`;
-        //     galleryContainer.append(galleryItem);
-        //   });
+          const filteredItems = portfolioItems.filter(item => item.id !== currentProjectID);      
+
 
         // Populate the Owl Carousel with filtered items
 const galleryContainer = $('#portfolio-gallery');
@@ -90,16 +78,26 @@ filteredItems.forEach(item => {
           $('#portfolio-gallery').owlCarousel({
             loop: true,
             margin: 10,
-            nav: false,
-            dots: true,
+            nav: false, 
             autoplay: true, // Enable autoplay
             autoplayTimeout: 3000, // Time between slides in milliseconds (3 seconds)
             autoplayHoverPause: true, // Pause on hover
             smartSpeed: 1000, // Smooth transition duration (1000ms = 1s)
             responsive: {
-              0: { items: 1 },
-              600: { items: 2 },
-              1000: { items: 3 }
+              0: { 
+                items: 1,
+                dots: false, 
+              },
+              600: 
+              { 
+                items: 2,
+                dots: true, 
+              },
+              1000: 
+              { 
+                items: 3,
+                dots: true,
+              }
             }
           });
         }
