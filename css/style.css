@@ -1914,6 +1914,20 @@ figure.dotted-bg {
 
   }
 
+  h5 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: .1rem;
+  
+    }
+
+    i {
+      color: #df8266;
+      vertical-align: middle;
+    }
+
 }
 
 #project-requirements {
@@ -1952,4 +1966,94 @@ h6 {
   transform: rotate(-40deg); /* Diagonal effect */
   z-index: 1; /* Ensure it's above the background but behind any text */
   pointer-events: none; /* Makes it unclickable */
+}
+
+.ux-casestudy-title {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 1.1rem !important;
+  letter-spacing: .05rem;
+  color: #0f3b09;
+
+}
+
+.grey-bg {
+  background-color: #F8F8F8;
+}
+
+#persona {
+  .p-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: .1rem;
+  
+    }
+
+    i {
+      color: #df8266;
+
+    }
+}
+
+
+
+.persona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 2rem; /* Inner padding */
+  border-radius: 8px; /* Rounded corners */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+}
+
+.persona img {
+  width: 200px;
+  margin-bottom: 1rem; /* Space below the image */
+}
+
+.persona p {
+  text-align: left; /* Keep text left-aligned */
+  width: 100%; 
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.persona h6 {
+  font-weight: 700;
+
+}
+
+.persona i {
+  color: #df8266;
+  vertical-align: middle;
+}
+
+.persona-right-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem;
+}
+
+#persona {
+
+  .persona-right-pane {
+    p, ul {
+      font-size: 0.9rem;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+
+}
+
+.taskflow {
+  width: 550px;
+}
+
+.retaskflow {
+  width: 780px;
 }
