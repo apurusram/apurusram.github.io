@@ -2057,3 +2057,14 @@ h6 {
 .retaskflow {
   width: 780px;
 }
+
+.ui {
+  width: 900px;
+}
+
+.before-dark-color {
+  background-color: #3d3d3d;
+  padding: 1rem;
+  color: #fff;
+  width: 100%;
+}
