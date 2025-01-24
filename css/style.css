@@ -2852,3 +2852,7 @@ figure.dotted-bg:before {
   color: #333;
   line-height: 1.6;
 }
+
+#author-img {
+  filter: grayscale(1);
+}
