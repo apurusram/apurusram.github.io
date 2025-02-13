@@ -20,6 +20,13 @@
 
     <!-- Leaderboard Table -->
     <div id="leaderboardTable" class="glassmorphism">
+
+      <!-- Spinner -->
+<div id="loadingSpinner" style="text-align: center;">
+  <div class="spinner"></div>
+  <p>Loading leaderboard...</p>
+</div>
+
       <table class="table text-white">
         <thead>
           <tr>
@@ -39,5 +46,30 @@
       <button class="btn btn-danger ms-2" id="resetLeaderboard">Reset</button>
     </div>
   </div>
+
+  <!-- Firebase SDK (CDN Version) -->
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyDx0jN9VdmDIQ0xxrsorlbyL0R_Prl8cWc",
+      authDomain: "leagueofc-fbf91.firebaseapp.com",
+      projectId: "leagueofc-fbf91",
+      storageBucket: "leagueofc-fbf91.firebasestorage.app",
+      messagingSenderId: "513036582890",
+      appId: "1:513036582890:web:4a7bfaeab6bb02537bfc93"
+    };
+
+    // Initialize Firebase (Use `firebase.` before `initializeApp`)
+    firebase.initializeApp(firebaseConfig);
+
+    // Initialize Firestore
+    const db = firebase.firestore();
+
+    console.log("Firebase Initialized Successfully!");
+  </script>
+
+
 </body>
 </html>
