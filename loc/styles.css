@@ -1,0 +1,41 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+.neon-text {
+  color: #00f2ff;
+  text-shadow: 0 0 10px #00f2ff;
+}
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+}
+.btn-neon {
+  background: linear-gradient(90deg, #00f2ff, #7e57c2);
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+.btn-neon:hover {
+  box-shadow: 0 0 10px #00f2ff;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db; /* Blue spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
