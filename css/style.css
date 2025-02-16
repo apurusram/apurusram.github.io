@@ -2571,7 +2571,6 @@ figure.dotted-bg:before {
   transition: background-color 0.3s ease;
 }
 
-/* Initially hide the widget */
 #nav-widget {
   opacity: 0;
   visibility: hidden;
@@ -2653,7 +2652,7 @@ figure.dotted-bg:before {
 
   i {
     color: #df8266;
-    vertical-align: middle;
+    /* vertical-align: middle; */
   }
 
 }
