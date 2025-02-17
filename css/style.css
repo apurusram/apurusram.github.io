@@ -2489,7 +2489,7 @@ figure.dotted-bg:before {
 .degree-info,
 .certificate-info {
   font-size: 0.9rem;
-  color: #727272;
+  color: #636363;
 }
 
 .degree-item:last-child,
@@ -2854,4 +2854,9 @@ figure.dotted-bg:before {
 
 #author-img {
   filter: grayscale(1);
+}
+
+.results {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
