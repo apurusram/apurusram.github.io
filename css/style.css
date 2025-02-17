@@ -2860,3 +2860,7 @@ figure.dotted-bg:before {
   font-size: 0.9rem;
   font-weight: 500;
 }
+
+.copy-text {
+  padding: 2rem;
+}
