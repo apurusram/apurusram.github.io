@@ -9,9 +9,9 @@
 <body>
 <!-- partial:index.partial.html -->
  <div>
-  <audio autoplay loop>
+  <audio id="bgMusic" loop>
     <source src="bg_music.mp3" type="audio/mpeg">
-  </audio>
+</audio>
  </div>
 <div class="book">
   <div class="page">
@@ -83,6 +83,15 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("click", function() {
+      let audio = document.getElementById("bgMusic");
+      if (audio.paused) {
+          audio.play();
+      }
+  });
+</script>
 
 
 <!-- partial -->
