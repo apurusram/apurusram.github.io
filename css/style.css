@@ -2864,3 +2864,45 @@ figure.dotted-bg:before {
 .copy-text {
   padding: 2rem;
 }
+
+.svg-img {
+  width: 50%;
+}
+
+
+
+.ui-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.ui-card:hover {
+  transform: translateY(-5px);
+}
+
+.ui-card h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+
+.svg-img {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: zoom-in;
+}
+
+.ui-challenge-info {
+  font-size: 0.9rem;
+  text-align: justify;
+}
