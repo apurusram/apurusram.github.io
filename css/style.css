@@ -2879,6 +2879,8 @@ figure.dotted-bg:before {
   text-align: center;
   transition: transform 0.3s ease;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .ui-card:hover {
@@ -2906,3 +2908,4 @@ figure.dotted-bg:before {
   font-size: 0.9rem;
   text-align: justify;
 }
+
