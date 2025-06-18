@@ -2909,3 +2909,11 @@ figure.dotted-bg:before {
   text-align: justify;
 }
 
+.lightboxOverlay {
+  background-color: #fff !important;
+  opacity: 1 !important;
+}
+
+.lb-data .lb-caption {
+  color: #7c7c7c !important;
+}
