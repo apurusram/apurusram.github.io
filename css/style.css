@@ -91,7 +91,7 @@ h3,
 .h3,
 h4,
 .h4 {
-  font-family: "Merriweather", serif;
+  font-family: "Nunito Sans", serif;
   color: #dddde6;
 }
 
@@ -2435,7 +2435,7 @@ figure.dotted-bg:before {
 
 /* .education-section {
   h5 {
-    font-family: "Merriweather", serif;
+    font-family: "Nunito Sans", serif;
     color: #0f3b09;
     text-transform: uppercase;
   }
@@ -2443,7 +2443,7 @@ figure.dotted-bg:before {
 
 .certification-section {
   h5 {
-    font-family: "Merriweather", serif;
+    font-family: "Nunito Sans", serif;
     color: #0f3b09;
     text-transform: uppercase;
   }
@@ -2468,7 +2468,7 @@ figure.dotted-bg:before {
   color: #0f3b09;
   /* text-transform: uppercase; */
   margin-bottom: 20px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Nunito Sans', serif;
 
 }
 
@@ -2696,7 +2696,7 @@ figure.dotted-bg:before {
 }
 
 .ux-casestudy-title {
-  font-family: 'Merriweather', serif;
+  font-family: 'Nunito Sans', serif;
   font-weight: 700;
   font-size: 1.1rem !important;
   letter-spacing: .05rem;
@@ -2905,7 +2905,7 @@ figure.dotted-bg:before {
 }
 
 .ui-challenge-info {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   text-align: justify;
 }
 
@@ -2916,4 +2916,31 @@ figure.dotted-bg:before {
 
 .lb-data .lb-caption {
   color: #7c7c7c !important;
+}
+
+#home-section {
+  padding: 0 !important;
+}
+
+.scroll-down {
+  display: inline-block;
+  margin-top: 30px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-down:hover {
+  transform: translateY(5px);
+}
+
+@keyframes floatArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.scroll-down i {
+  animation: floatArrow 1.8s ease-in-out infinite;
 }
