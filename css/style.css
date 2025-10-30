@@ -2628,7 +2628,7 @@ figure.dotted-bg:before {
 
   p,
   ul {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     text-align: justify;
   }
 
@@ -2924,7 +2924,7 @@ figure.dotted-bg:before {
 
 .scroll-down {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -2944,3 +2944,5 @@ figure.dotted-bg:before {
 .scroll-down i {
   animation: floatArrow 1.8s ease-in-out infinite;
 }
+  
+
