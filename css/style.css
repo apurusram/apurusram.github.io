@@ -50,14 +50,14 @@ body.offcanvas-menu:before {
 }
 
 a {
-  color: #0f3b09;
+  color: #1d7f0fcc;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
 }
 
 a:hover {
-  color: #0f3b09;
+  color: #1d7f0fcc;
   text-decoration: none;
 }
 
@@ -72,15 +72,15 @@ a:hover {
 }
 
 .text-primary {
-  color: #0f3b09 !important;
+  color: #1d7f0fcc !important;
 }
 
 a.text-primary {
-  color: #0f3b09 !important;
+  color: #1d7f0fcc !important;
 }
 
 a.text-primary:hover {
-  color: #0f3b09 !important;
+  color: #1d7f0fcc !important;
 }
 
 h1,
@@ -113,8 +113,8 @@ h4,
 }
 
 .btn.btn-primary {
-  background: #0f3b09;
-  border-color: #0f3b09;
+  background: #1d7f0fcc;
+  border-color: #1d7f0fcc;
 }
 
 .btn.btn-primary:hover {
@@ -171,7 +171,7 @@ h4,
 .form-control:focus,
 .custom-select:active,
 .custom-select:focus {
-  border-color: #0f3b09;
+  border-color: #1d7f0fcc;
   -webkit-box-shadow: none;
   box-shadow: none;
   background: transparent;
@@ -259,7 +259,7 @@ h4,
 }
 
 .spinner-border {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 /*PRELOADING------------ */
@@ -433,7 +433,7 @@ h4,
 }
 
 .site-nav .site-navigation .site-menu .has-children .dropdown .active {
-  color: #0f3b09 !important;
+  color: #1d7f0fcc !important;
 }
 
 .site-nav .site-navigation .site-menu .has-children .dropdown>li {
@@ -449,11 +449,11 @@ h4,
 }
 
 .site-nav .site-navigation .site-menu .has-children .dropdown>li>a:hover {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .site-nav .site-navigation .site-menu .has-children .dropdown>li.active>a {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .site-nav .site-navigation .site-menu .has-children .dropdown>li.has-children>a:before {
@@ -469,13 +469,13 @@ h4,
 
 .site-nav .site-navigation .site-menu .has-children .dropdown>li.has-children>.dropdown li a:hover,
 .site-nav .site-navigation .site-menu .has-children .dropdown>li.has-children>ul li a:hover {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .site-nav .site-navigation .site-menu .has-children .dropdown>li.has-children:hover>a,
 .site-nav .site-navigation .site-menu .has-children .dropdown>li.has-children:active>a,
 .site-nav .site-navigation .site-menu .has-children .dropdown>li.has-children:focus>a {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .site-nav .site-navigation .site-menu .has-children:hover>a,
@@ -520,7 +520,7 @@ h4,
 .site-nav.dark .site-navigation .site-menu>li.has-children.dropdown:hover>a,
 .site-nav.dark .site-navigation .site-menu>li.has-children.dropdown:focus>a,
 .site-nav.dark .site-navigation .site-menu>li.has-children.dropdown:active>a {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .site-nav.dark .site-navigation .site-menu>li.has-children:hover>a,
@@ -659,29 +659,28 @@ h4,
 }
 
 .site-mobile-menu .site-nav-wrap a.active {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .site-mobile-menu .site-nav-wrap a:hover {
   color: #df8266;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   position: relative;
 }
 
+/* 
 .site-mobile-menu .site-nav-wrap a:hover::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1px;
-  /* Adjust this value to control how far below the text the underline appears */
-  height: 1px;
-  /* Thickness of the underline */
+  bottom: -1px;   
+  height: 1px;   
   width: 8rem;
-  background-color: #0f3b09;
-  /* Color of the underline */
-}
+  background-color: #1d7f0fcc; 
+} 
+*/
 
 .site-mobile-menu .site-nav-wrap li {
   position: relative;
@@ -689,7 +688,7 @@ h4,
 }
 
 .site-mobile-menu .site-nav-wrap li.active>a {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
@@ -736,7 +735,9 @@ h4,
 
 .site-mobile-menu .site-nav-wrap>li>a {
   padding-left: 20px;
-  font-size: 14px;
+  font-size: 25px;
+  text-transform: lowercase;
+  font-weight: 600;
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul {
@@ -823,11 +824,11 @@ h4,
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu>li>a:hover,
 .sticky-wrapper.is-sticky .site-navbar .site-menu>li>a.active {
-  color: #0f3b09 !important;
+  color: #1d7f0fcc !important;
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu>li.active a {
-  color: #0f3b09 !important;
+  color: #1d7f0fcc !important;
 }
 
 .sticky-wrapper .shrink {
@@ -1174,7 +1175,7 @@ h4,
 }
 
 .wave path {
-  stroke: #0f3b09;
+  stroke: #1d7f0fcc;
   stroke-width: 2px;
   stroke-linecap: round;
   fill: none;
@@ -1219,7 +1220,7 @@ h4,
 }
 
 .testimonial-v1:hover {
-  border-color: #0f3b09;
+  border-color: #1d7f0fcc;
 }
 
 .owl-3-slider .owl-nav,
@@ -1269,7 +1270,7 @@ h4,
 .owl-3-slider .owl-nav .owl-prev:hover,
 .single-slider .owl-nav .owl-prev:hover {
   left: -35px;
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .owl-3-slider .owl-nav .owl-next,
@@ -1291,7 +1292,7 @@ h4,
 .owl-3-slider .owl-nav .owl-next:hover,
 .single-slider .owl-nav .owl-next:hover {
   right: -35px;
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 figure.dotted-bg {
@@ -1324,7 +1325,7 @@ figure.dotted-bg:before {
 }
 
 .experience-wrap .experience {
-  background: #0f3b09;
+  background: #1d7f0fcc;
   padding: 20px;
   color: #ffffff;
   padding-left: 30px;
@@ -1511,7 +1512,7 @@ figure.dotted-bg:before {
 }
 
 .work-experience:hover:before {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .work-experience .position {
@@ -1950,7 +1951,7 @@ figure.dotted-bg:before {
 .custom-accordion .accordion-item .btn-link[aria-expanded="true"] {
   font-weight: 700;
   color: #ffffff !important;
-  background: #0f3b09;
+  background: #1d7f0fcc;
 }
 
 .custom-accordion .accordion-item .btn-link[aria-expanded="true"]:before {
@@ -2021,7 +2022,7 @@ figure.dotted-bg:before {
 }
 
 .control input:checked~.control__indicator {
-  background: #0f3b09;
+  background: #1d7f0fcc;
 }
 
 .control:hover input:not([disabled]):checked~.control__indicator,
@@ -2064,7 +2065,7 @@ figure.dotted-bg:before {
 }
 
 .control--checkbox input:disabled:checked~.control__indicator {
-  background-color: #0f3b09;
+  background-color: #1d7f0fcc;
   opacity: .2;
 }
 
@@ -2200,7 +2201,7 @@ figure.dotted-bg:before {
 
 .owl-single .owl-dots .owl-dot.active span,
 .owl-carousel .owl-dots .owl-dot.active span {
-  background: #0f3b09;
+  background: #1d7f0fcc;
 }
 
 .owl-single.no-dots .owl-dots,
@@ -2304,7 +2305,7 @@ figure.dotted-bg:before {
 }
 
 .ul-check.primary li:before {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .ul-check.white li:before {
@@ -2322,11 +2323,11 @@ figure.dotted-bg:before {
 }
 
 .site-footer a:hover {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .site-footer a:hover:before {
-  background: #0f3b09;
+  background: #1d7f0fcc;
 }
 
 .site-footer .btn:before {
@@ -2358,7 +2359,7 @@ figure.dotted-bg:before {
   width: 30px;
   height: 30px;
   position: relative;
-  background: #0f3b09;
+  background: #1d7f0fcc;
   border-radius: 50%;
   color: #ffffff;
 }
@@ -2404,7 +2405,7 @@ figure.dotted-bg:before {
 }
 
 .filter-button.active {
-  background-color: #0f3b09;
+  background-color: #1d7f0fcc;
   color: white;
   border-radius: 5px;
 }
@@ -2436,7 +2437,7 @@ figure.dotted-bg:before {
 /* .education-section {
   h5 {
     font-family: "Nunito Sans", serif;
-    color: #0f3b09;
+    color: #1d7f0fcc;
     text-transform: uppercase;
   }
 }
@@ -2444,7 +2445,7 @@ figure.dotted-bg:before {
 .certification-section {
   h5 {
     font-family: "Nunito Sans", serif;
-    color: #0f3b09;
+    color: #1d7f0fcc;
     text-transform: uppercase;
   }
 } */
@@ -2465,7 +2466,7 @@ figure.dotted-bg:before {
 .certification-section h5 {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #0f3b09;
+  color: #1d7f0fcc;
   /* text-transform: uppercase; */
   margin-bottom: 20px;
   font-family: 'Nunito Sans', serif;
@@ -2507,7 +2508,7 @@ figure.dotted-bg:before {
 
 
   h2 {
-    color: #0f3b09;
+    color: #1d7f0fcc;
 
   }
 
@@ -2536,7 +2537,7 @@ figure.dotted-bg:before {
 
 #exp-cards .card:hover {
   transform: scale(1.02);
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 
@@ -2621,7 +2622,7 @@ figure.dotted-bg:before {
 }
 
 #portfolio-section h1 {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 #project-description {
@@ -2700,7 +2701,7 @@ figure.dotted-bg:before {
   font-weight: 700;
   font-size: 1.1rem !important;
   letter-spacing: .05rem;
-  color: #0f3b09;
+  color: #1d7f0fcc;
 
 }
 
@@ -2816,7 +2817,7 @@ figure.dotted-bg:before {
 }
 
 #skills-section .section-heading {
-  color: #0f3b09;
+  color: #1d7f0fcc;
 }
 
 .skills-card {
